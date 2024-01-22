@@ -1,10 +1,16 @@
-# Nuxt 3 Minimal Starter
+![image](public/project-preview.png)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+It's a minimal starter for Nuxt 3 and start building your next web application simply and quickly. Including :
+- [Tailwind CSS](https://tailwindcss.com/)
+- Color mode (dark & light)
 
-## Setup
 
-Make sure to install the dependencies:
+## Quick Setup
+
+--- 
+
+To get started, follow these steps:
+
 
 ```bash
 # npm
@@ -21,6 +27,8 @@ bun install
 ```
 
 ## Development Server
+
+---
 
 Start the development server on `http://localhost:3000`:
 
@@ -39,6 +47,8 @@ bun run dev
 ```
 
 ## Production
+
+---
 
 Build the application for production:
 
@@ -72,4 +82,9 @@ yarn preview
 bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Author
+
+---
+
+- [Johann Cavallucci]('https://github.com/cavalluccijohann')
+
