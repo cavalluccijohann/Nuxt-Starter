@@ -1,5 +1,14 @@
 import type { Config } from "tailwindcss";
 
+function withOpacity(variableName: string) {
+  return ({ opacityValue }) => {
+    if (opacityValue !== undefined) {
+      return `rgba(var(${variableName}), ${opacityValue})`;
+    }
+    return `rgb(var(${variableName}))`;
+  };
+}
+
 export default {
   darkMode: "class",
   content: [
@@ -12,13 +21,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        main: "var(--main-color)",
-        muted: "var(--muted)",
-        inverted: "var(--inverted)",
-        "text-color": "var(--text-color)",
-        accent: "var(--accent)",
-        "accent-hover": "var(--accent-hover)",
-        "accent-faded": "var(--accent-faded)",
+        "color-primary":  withOpacity("--color-primary"),
+        "color-background": withOpacity("--color-background"),
+        "color-text": withOpacity("--color-text"),
       },
     },
   },
