@@ -7,7 +7,7 @@ It's a minimal starter for Nuxt 3 and start building your next web application s
 
 ## Quick Setup
 
---- 
+---
 
 To get started, follow these steps:
 
